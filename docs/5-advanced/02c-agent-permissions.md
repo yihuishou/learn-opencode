@@ -337,7 +337,7 @@ task 权限控制 **Agent 可以调用哪些 subagent**。
 Task 工具的完整参数定义如下：
 
 | 参数 | 类型 | 必需 | 说明 |
-|------|------|------|
+|------|------|------|------|
 | `description` | string | 是 | 任务描述（3-5 个词），用作子会话标题 |
 | `prompt` | string | 是 | 子代理要执行的任务提示 |
 | `subagent_type` | string | 是 | 要调用的子代理名称（必须是非 primary agent） |
