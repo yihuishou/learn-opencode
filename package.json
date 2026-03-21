@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "bash scripts/stats.sh && vitepress dev docs",
     "build": "bash scripts/stats.sh && vitepress build docs",
-    "preview": "vitepress preview docs"
+    "preview": "vitepress preview docs",
+    "dev:win": "powershell -ExecutionPolicy Bypass -File scripts/stats.ps1 && vitepress dev docs",
+    "build:win": "powershell -ExecutionPolicy Bypass -File scripts/stats.ps1 && vitepress build docs"
   },
   "keywords": [
     "opencode",
