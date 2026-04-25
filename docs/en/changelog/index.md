@@ -8,6 +8,7 @@ OpenCode version update records to help you understand new features and improvem
 
 | Version | Release Date | Highlights |
 |---------|--------------|------------|
+| [v1.3.0](./v1.3.0.md) | 2026-03-23 | GitLab Agent Platform + Node.js Support |
 | [v1.2.10](./v1.2.10.md) | 2026-02-20 | Sidecar optimization, SDK build improvements |
 | [v1.2.9](./v1.2.9.md) | 2026-02-20 | MCP attachment fix, performance optimization |
 | [v1.2.8](./v1.2.8.md) | 2026-02-19 | Claude 4.6 thinking mode, MCP visualization |

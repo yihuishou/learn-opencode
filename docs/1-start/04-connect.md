@@ -230,11 +230,16 @@ source ~/.zshrc
 用 <kbd>↑</kbd> <kbd>↓</kbd> 选择，按 <kbd>Enter</kbd> 确认。
 
 ::: tip 设置默认模型
-在 `opencode.json` 中配置 `model` 字段，可以设置默认使用的模型：
+在 `opencode.json` 中配置 `model` 字段，可以设置默认使用的模型。模型 ID 必须和 `/models` 列表中的**完全一致**，手打容易出错，建议整行复制。
+
+```bash
+# 先在终端查看可用的模型 ID
+opencode models
+```
 
 ```json
 {
-  "model": "deepseek/deepseek-chat"
+  "model": "deepseek/deepseek-chat"  // ← 从 opencode models 列表里整行复制，别手打
 }
 ```
 :::

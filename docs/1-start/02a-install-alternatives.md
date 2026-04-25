@@ -198,6 +198,48 @@ sudo mv ~/.opencode/bin/opencode /usr/local/bin/opencode
 
 ---
 
+## 没有 PATH 怎么启动？
+
+如果 `opencode` 命令提示"找不到"，说明安装目录不在 PATH 里。可以用绝对路径直接启动：
+
+### Windows
+
+```powershell
+# PowerShell（官方脚本安装）
+C:\Users\<用户名>\.opencode\bin\opencode.exe
+
+# 简写（用环境变量）
+$env:USERPROFILE\.opencode\bin\opencode.exe
+
+# Scoop 安装
+C:\Users\<用户名>\scoop\apps\opencode\current\opencode.exe
+
+# Chocolatey 安装
+C:\ProgramData\chocolatey\bin\opencode.exe
+```
+
+```cmd
+:: CMD（官方脚本安装）
+%USERPROFILE%\.opencode\bin\opencode.exe
+```
+
+### macOS / Linux
+
+```bash
+# 官方脚本安装
+~/.opencode/bin/opencode
+
+# 或者展开写
+/Users/<用户名>/.opencode/bin/opencode    # macOS
+/home/<用户名>/.opencode/bin/opencode      # Linux
+```
+
+::: tip 建议
+长期使用建议把安装目录加到 PATH，不用每次敲完整路径。参考 [1.2b 装不上怎么办？](./02b-install-troubleshoot) 的"手动添加到 PATH"部分。
+:::
+
+---
+
 ## 下一步
 
 安装完成后，回到 [1.2 安装](./02-install) 的"验证安装"步骤，确认 `opencode --version` 能正常输出。

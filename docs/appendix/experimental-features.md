@@ -112,6 +112,34 @@ export OPENCODE_EXPERIMENTAL_PLAN_MODE=true
 
 ---
 
+### 🗂️ 工作区管理
+
+| 变量 | 说明 |
+|------|------|
+| `OPENCODE_EXPERIMENTAL_WORKSPACES` | 在 TUI 中启用工作区（Workspaces）支持 |
+
+**启用方式**：
+```bash
+export OPENCODE_EXPERIMENTAL_WORKSPACES=1
+```
+
+**使用场景**：
+- 同时开发多个项目/仓库
+- 使用 Git Worktree 在不同分支间切换
+- 隔离不同任务的上下文
+
+**TUI 操作**：
+- 输入 `/workspaces` 打开工作区列表
+- 或按 `Ctrl+X` 打开命令面板 → 输入 "workspace"
+- 可以创建、切换、删除工作区
+
+**当前支持的工作区类型**：
+| 类型 | 说明 |
+|------|------|
+| `worktree` | Git Worktree（同一仓库的不同分支） |
+
+---
+
 ### 🎨 界面与交互
 
 | 变量 | 说明 |
@@ -227,6 +255,11 @@ export OPENCODE_EXPERIMENTAL_ICON_DISCOVERY=true   # 自动发现项目图标
 # 工作流增强
 # ───────────────────────────────────────────────────────────────
 export OPENCODE_EXPERIMENTAL_PLAN_MODE=true  # 启用计划模式
+
+# ───────────────────────────────────────────────────────────────
+# 工作区管理
+# ───────────────────────────────────────────────────────────────
+export OPENCODE_EXPERIMENTAL_WORKSPACES=1    # 启用 TUI 工作区支持
 
 # ───────────────────────────────────────────────────────────────
 # 性能与格式化

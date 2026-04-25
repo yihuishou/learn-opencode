@@ -385,6 +385,28 @@ opencode session list
 
 ---
 
+### Q: 如何查看当前会话的 session ID
+
+**A**: 有两种方式：
+
+| 方式 | 操作 |
+|------|------|
+| **CLI** | 在终端运行 `opencode session list`，第一列就是 session ID |
+| **TUI** | 按 `<leader>l`（即 Ctrl+X → L）打开会话列表，当前会话会有高亮标记 |
+
+```bash
+# CLI 方式：列出所有会话
+opencode session list
+
+# 输出示例
+# Session ID                      Title                    Updated
+# ses_2eeb39d82ffecC4m0PQttrXkTa  我的会话标题           12:54 AM
+```
+
+当前会话的 ID 在 TUI 的会话列表中会高亮显示，选中的那一条就是。
+
+---
+
 ### Q: 如何导出对话记录
 
 **A**: 
